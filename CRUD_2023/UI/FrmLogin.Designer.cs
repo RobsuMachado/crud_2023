@@ -62,10 +62,11 @@
             this.txtUser.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtUser.Location = new System.Drawing.Point(26, 144);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(2);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(329, 29);
             this.txtUser.TabIndex = 3;
+            this.txtUser.TextChanged += new System.EventHandler(this.TxtUser_TextChanged);
             // 
             // txtSecret
             // 
@@ -74,7 +75,7 @@
             this.txtSecret.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSecret.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtSecret.Location = new System.Drawing.Point(26, 218);
-            this.txtSecret.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSecret.Margin = new System.Windows.Forms.Padding(2);
             this.txtSecret.Name = "txtSecret";
             this.txtSecret.PasswordChar = '*';
             this.txtSecret.Size = new System.Drawing.Size(329, 29);
@@ -116,7 +117,7 @@
             this.label1.Location = new System.Drawing.Point(50, 42);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(279, 32);
+            this.label1.Size = new System.Drawing.Size(280, 32);
             this.label1.TabIndex = 5;
             this.label1.Text = "Entre em sua conta";
             // 
@@ -133,7 +134,7 @@
             this.Controls.Add(this.lblSecret);
             this.Controls.Add(this.lblUser);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmLogin";

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Crud_2023.BLL;
 using Crud_2023.DTO;
 
-namespace CRUD_2023
+namespace Crud_2023
 {
     public partial class FrmLogin : Form
     {
@@ -21,14 +21,11 @@ namespace CRUD_2023
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            // CRIAR UM OBJETO DE TRANSPORTE LOGIN
             LoginDTO loginDTO = new LoginDTO
             {
                 User = txtUser.Text,
                 Secret = txtSecret.Text,
             };
-
-            // CHAMAR O MÉTODO DA BLL, PARA ISSO É NECESSÁRIO CRIAR UM OBJETO QUE POSSUA GetLoginBLL
             LoginBLL loginBLL = new LoginBLL();
             bool retorno = loginBLL.GetLoginBLL(loginDTO);
             if (retorno)
@@ -42,6 +39,11 @@ namespace CRUD_2023
         }
 
         private void txtSecret_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtUser_TextChanged(object sender, EventArgs e)
         {
 
         }
