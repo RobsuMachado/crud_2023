@@ -1,4 +1,4 @@
-﻿namespace CRUD_2023
+﻿namespace Crud_2023
 {
     partial class FrmLogin
     {
